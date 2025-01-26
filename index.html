@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ehsan Nadernezhad - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    <!-- Header -->
+    <header class="bg-blue-600 text-white">
+        <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+            <h1 class="name"><span>E.</span><span> </span><span>N</span><span>a</span><span>d</span><span>e</span><span>r</span><span>n</span><span>e</span><span>z</span><span>h</span><span>a</span><span><span>d</span></span></h1>
+            <button id="menu-toggle" class="block md:hidden text-white">
+                ☰
+            </button>
+            <nav id="menu" class="hidden md:flex">
+                <ul class="flex space-x-4">
+                    <li><a href="#about" class="hover:underline">About</a></li>
+                    <li><a href="#skills" class="hover:underline">Skills</a></li>
+                    <li><a href="#projects" class="hover:underline">Projects</a></li>
+                    <li><a href="#contact" class="hover:underline">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+
+    <!-- About Section -->
+    <section id="about" class="bg-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-6">About Me</h2>
+            <p class="text-lg text-gray-700">I am Ehsan Nadernezhad, a passionate and dedicated web developer specializing in full-stack and back-end development. With a year of programming experience and a background in ASP.NET Core, C#, and Python, I bring technical expertise and creative problem-solving to every project.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="bg-gray-100 py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-6">Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="p-6 bg-white shadow rounded-lg">
+                    <h3 class="text-2xl font-semibold mb-4">Programming Languages</h3>
+                    <p>C#, Python, HTML, CSS, JavaScript</p>
+                </div>
+                <div class="p-6 bg-white shadow rounded-lg">
+                    <h3 class="text-2xl font-semibold mb-4">Frameworks</h3>
+                    <p>ASP.NET Core, Blazor</p>
+                </div>
+                <div class="p-6 bg-white shadow rounded-lg">
+                    <h3 class="text-2xl font-semibold mb-4">Tools</h3>
+                    <p>Git, Visual Studio, SQL Server</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="bg-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-6">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="p-6 bg-gray-100 shadow rounded-lg">
+                    <h3 class="text-2xl font-semibold mb-4">Personal Website</h3>
+                    <p>A responsive and interactive website showcasing my programming skills and projects.</p>
+                </div>
+                <div class="p-6 bg-gray-100 shadow rounded-lg">
+                    <h3 class="text-2xl font-semibold mb-4">E-commerce API</h3>
+                    <p>An API built with ASP.NET Core, implementing authentication, product management, and orders.</p>
+                </div>
+                <div class="p-6 bg-gray-100 shadow rounded-lg">
+                    <h3 class="text-2xl font-semibold mb-4">Meditation Podcast Platform</h3>
+                    <p>A web application for hosting and streaming meditation content, including user login functionality.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-gray-100 py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-6">Contact</h2>
+            <p class="text-lg text-gray-700 mb-6">Feel free to reach out for collaboration or inquiries.</p>
+            <a href="mailto:ehsan@example.com" class="text-blue-600 hover:underline">ehsan@example.com</a>
+        </div>
+    </section>
+    <form id="contact-form" class="bg-white shadow p-6 rounded-lg max-w-md mx-auto">
+        <input id="name" type="text" placeholder="Your Name" class="w-full p-2 border mb-4" required>
+        <input id="email" type="email" placeholder="Your Email" class="w-full p-2 border mb-4" required>
+        <textarea id="message" placeholder="Your Message" class="w-full p-2 border mb-4" required></textarea>
+        <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Send</button>
+        <p id="form-feedback" class="text-red-600 hidden mt-2"></p>
+    </form>
+    <br>
+    <br>
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white py-4">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 Ehsan Nadernezhad. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
