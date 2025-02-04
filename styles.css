@@ -1,8 +1,10 @@
 /* styles.css */
+
+
 body {
     font-family: 'Arial', sans-serif;
-    background-color: black;
-    color: #2563eb;
+    /* background-color: black;
+    color: #2563eb; */
     margin: 0;
     padding: 0;
     text-align: center;
@@ -25,7 +27,6 @@ header div {
 
 header h1 {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 2rem;
     margin: 0;
 }
 
@@ -55,29 +56,39 @@ nav ul {
 }
 
 nav a {
-    color: white;
+    /* color: white; */
     text-decoration: none;
-    background-color:#303b60;
+    /* background-color:#303b60; */
+    display: inline-block;
+    transition: transform 0.3s ease;
 }
 
 nav a:hover {
     text-decoration: underline;
+    transform: translateY(-10px);
     color: goldenrod;
 }
 
 section {
-    padding: 4rem 1rem;
+    padding: 4% 5%;
 }
 
 h2 {
-    font-size: 2.5rem;
-    color: #2563eb;
-    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: white;
 }
 
 p {
+    padding: 30px 20px;
     font-size: 1.125rem;
     line-height: 1.6;
+    margin: 0;
+}
+
+h3 {
+    margin: 0;
+    color: lightblue;
 }
 
 footer {
